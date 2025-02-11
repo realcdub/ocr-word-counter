@@ -14,7 +14,6 @@ def main():
 
 @app.route("/processImage", methods=['POST'])
 def processImage():
-   print("PROCESSING")
    image = Image.open(request.files["file"].stream);
    response = client.models.generate_content(
        model="gemini-2.0-flash",
