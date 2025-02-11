@@ -6,7 +6,7 @@ from google import genai
 from PIL import Image
 
 app = Flask(__name__)
-client = genai.Client(api_key="GEMINI API KEY HERE")
+client = genai.Client(api_key="YOUR GEMINI API KEY")
 
 @app.route("/")
 def main():
